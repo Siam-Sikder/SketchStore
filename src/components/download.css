@@ -1,0 +1,87 @@
+.download{
+    width: 100%;
+    min-height: 300px;
+    padding: 30px;
+}
+
+.download h1, .download p{
+    text-align: center;
+}
+
+.cards{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.card{
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px;
+    width: 28%;
+    height: 250px;
+    border-radius: 10px;
+    background: #2b2c2f;
+    box-shadow: 0 0 5px #1a1a1a;
+}
+
+.card h2{
+    margin: 10px;
+}
+
+.card ion-icon{
+    font-size: 60px;
+    color: #04aa6d;
+    box-shadow: none;
+    display: block;
+    margin-left: 50px;
+}
+
+.card button{
+    font-size: 20px;
+    font-weight: bolder;
+    border: none;
+    color: #000;
+    background: #04aa6d;
+    padding: 20px 60px 20px 60px;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: background 0.5 linear;
+}
+
+.card button:hover{
+    background: #1a1a1a;
+    color: #fff;
+}
+
+
+
+@media only screen and (max-width: 700px) {
+    .download h1, .download p{
+        text-align: center;
+        margin-left: -50px;
+    }
+
+    .card ion-icon{
+        display: block;
+    }
+
+    .card{
+        width: 100%;
+        margin-left: -20px;
+        transform: scale(0.9);
+    }
+    
+    .card p{
+        margin-left: 5px;
+    }
+
+    .cards{
+        display: flex;
+        flex-direction: column;
+        margin-right: 60px;
+    }
+}

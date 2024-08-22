@@ -1,0 +1,103 @@
+.screenshots{
+    position: relative;
+    width: 100%;
+}
+
+.shotBox{
+    width: 100%;
+    display: flex;
+    overflow-x: auto;
+    /* background: #1a1a1a; */
+    transform: scaleY(0.9);
+}
+
+.shot{
+    flex: 0 0 auto;
+}
+
+.shot.one{
+    width: 250px;
+    height: 536px;
+    background: url(../img/screenshot1.jpeg) no-repeat center center;
+    background-size: contain;
+    border-radius: 20px;
+    z-index: 1;
+    margin: 15px;
+}
+
+.shot.two{
+    width: 250px;
+    height: 536px;
+    background: url(../img/screenshot2.jpeg) no-repeat center center;
+    background-size: contain;
+    border-radius: 20px;
+    z-index: 1;
+    margin: 15px;
+}
+
+.shot.three{
+    width: 250px;
+    height: 536px;
+    background: url(../img/screenshot3.jpeg) no-repeat center center;
+    background-size: contain;
+    border-radius: 20px;
+    z-index: 1;
+    margin: 15px;
+}
+
+.shot.four{
+    width: 250px;
+    height: 536px;
+    background: url(../img/screenshot4.jpeg) no-repeat center center;
+    background-size: contain;
+    border-radius: 20px;
+    z-index: 1;
+    margin: 15px;
+}
+
+.shot.five{
+    width: 250px;
+    height: 536px;
+    background: url(../img/screenshot5.jpeg) no-repeat center center;
+    background-size: contain;
+    border-radius: 20px;
+    z-index: 1;
+    margin: 15px;
+}
+
+.shot.six{
+    width: 250px;
+    height: 536px;
+    background: url(../img/screenshot6.jpeg) no-repeat center center;
+    background-size: contain;
+    border-radius: 20px;
+    z-index: 1;
+    margin: 15px;
+}
+
+.shot.seven{
+    width: 250px;
+    height: 536px;
+    background: url(../img/screenshot7.jpeg) no-repeat center center;
+    background-size: contain;
+    border-radius: 20px;
+    z-index: 1;
+    margin: 15px;
+}
+
+.shot.eight{
+    width: 250px;
+    height: 536px;
+    background: url(../img/screenshot8.jpeg) no-repeat center center;
+    background-size: contain;
+    border-radius: 20px;
+    z-index: 1;
+    margin: 15px;
+}
+
+
+@media only screen and (max-width: 700px) {
+    .screenshots{
+        margin-top: 70px;
+    }
+}

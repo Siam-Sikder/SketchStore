@@ -1,0 +1,99 @@
+.container{
+    display: flex;
+    flex-direction: row;
+}
+
+.content{
+    position: relative;
+    top: 200px;
+    left: 100px;
+    width: 400px;
+}
+
+h1{
+    margin-bottom: 20px;
+}
+
+p{
+    margin-bottom: 40px;
+}
+
+button, a{
+    border: none;
+    font-size: 20px;
+    font-weight: bolder;
+    text-decoration: none;
+    color: #000;
+    border-radius: 30px;
+    background: #04aa6d;
+    padding: 20px 40px 20px 40px;
+    transition: background 0.2s linear;
+    cursor: pointer;
+}
+
+button:hover, a:hover{
+    background: #000;
+    color: #fff;
+}
+
+.block{
+    width: 450px;
+    height: 450px;
+    background: url(../img/block.png) no-repeat center center;
+    background-size: contain;
+    animation: curcle 10s linear infinite;
+}
+
+@keyframes curcle{
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+.img{
+    position: absolute;
+    width: 250px;
+    height: 536px;
+    background: url(../img/takbir.jpeg) no-repeat center center;
+    background-size: contain;
+    border-radius: 20px;
+    z-index: 1;
+    margin-left: 90px;
+    margin-top: -30px;
+    animation: img 3s ease infinite;
+}
+
+@keyframes img{
+    0%, 100%{
+        transform: translateY(-30px);
+    }
+    50%{
+        transform: translateY(0px);
+    }
+}
+
+.imgBox{
+    margin-left: 120px;
+    margin-top: 80px;
+    transform: scale(0.9);
+}
+
+
+@media only screen and (max-width: 700px){
+    .content{
+        margin-left: -80px;
+        margin-top: -100px;
+    }
+
+    .imgBox{
+        margin-left: -20px;
+        z-index: -1;
+        margin-top: 300px;
+        margin-bottom: 30px;
+    }
+
+    .container{
+        display: flex;
+        flex-direction: column;
+    }
+}

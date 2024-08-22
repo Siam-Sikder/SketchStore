@@ -1,0 +1,134 @@
+.contact h1{
+    text-align: center;
+    width: 100%;
+    position: absolute;
+}
+
+.contact .texts{
+    display: flex;
+    flex-direction: column;
+    margin-top: 80px;
+    margin-left: 80px;
+}
+
+.contact .texts h2{
+    margin-bottom: 20px;
+}
+
+.textBox{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.iconBox ion-icon{
+    box-shadow: none;
+    border-radius: 50%;
+    border: 2px solid #04aa6d;
+    color: #04aa6d;
+    display: block;
+}
+
+.textBox .text{
+    margin-top: 5px;
+    margin-left: -40px;
+}
+
+.inputBox{
+    margin: 30px;
+    position: relative;
+    top: 40px;
+    right: -300px;
+}
+
+.inputBox input {
+    border: none;
+    background: #2b2c2f;
+    box-shadow: 0 0 5px #1a1a1a;
+    border-radius: 10px;
+    height: 40px;
+    margin-bottom: 20px;
+    width: 60%;
+    pointer-events: all;
+}
+
+.inputBox input:focus{
+    outline: 2px solid #04aa6d;
+    color: #04aa6d;
+}
+
+.text-input{
+    display: flex;
+}
+
+.inputBox button{
+    width: 60%;
+    padding: 20px 20px 20px 20px;
+    margin-left: 5px;
+    border: none;
+    border-radius: 30px;
+    background: #04aa6d;
+    font-size: 20px;
+    font-weight: bolder;
+    margin-left: 15px;
+    cursor: pointer;
+}
+
+.inputBox button:hover{
+    background: #000;
+    color: #fff;
+}
+
+.message{
+    min-height: 100px;
+    text-align: start;
+}
+
+.text-input .texts{
+    height: 70px;
+}
+
+.in{
+    width: 505px;
+    display: flex;
+    justify-content: space-between;
+    margin-left: -15px;
+}
+
+.in input {
+    width: 260px;
+    margin-left: 15px;
+}
+
+@media only screen and (max-width: 700px) {
+    .texts{
+        margin-left: 150px;
+    }
+
+    .textBox{
+        margin-left: -90px;
+    }
+
+    .text-input{
+        flex-direction: column;
+    }
+
+    .inputBox{
+        right: 0px;
+    }
+
+    .inputBox input{
+        margin-left: -5px;
+        width: 98%;
+    }
+
+    .inputBox button{
+        width: 100%;
+        margin-left: 5px;
+        margin-bottom: 10px;
+    }
+
+    .text-input .texts{
+        height: 170px;
+    }
+}

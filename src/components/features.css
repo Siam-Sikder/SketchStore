@@ -1,0 +1,42 @@
+span{
+    color: #04aa6d;
+}
+
+.box{
+    margin: 15px;
+    box-shadow: 0 0 5px #1a1a1a;
+    padding: 30px;
+    border-radius: 10px;
+    min-width: 300px;
+    height: 200px;
+    transition: transform 0.3s linear;
+}
+
+.box:hover{
+    transform: scale(1.1);
+}
+
+.features{
+    overflow-x: scroll;
+    overflow-y: hidden;
+}
+
+.features ion-icon{
+    display: block;
+    font-size: 80px;
+    color: #04aa6d;
+    box-shadow: none;
+}
+
+@media only screen and (max-width: 700px) {
+    .box{
+        transform: scale(0.9);
+        margin: 1px;
+        margin-bottom: 200px;
+        margin-top: 50px;
+    }
+
+    .box:hover{
+        transform: scale(1);
+    }
+}
